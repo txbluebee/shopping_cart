@@ -26,9 +26,9 @@ Commerce site is a website that allows administrator to add, edit, delete produc
 
 
 ### Further Exploration
-- [] Custom CSS styling
-- [] Add validation to product cost
-- [] show the product's average rating
+Custom CSS styling
+Add validation to product cost
+show the product's average rating
 
 ## Prerequisites & Installation
 
