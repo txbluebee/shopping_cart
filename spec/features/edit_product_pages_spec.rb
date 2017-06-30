@@ -18,4 +18,11 @@ describe "the edit a list process" do
     click_on 'Update Product'
     expect(page).to have_content 'errors'
   end
+
+  it "delete the product" do
+    product = Product.create(:name => 'Iphone 8', :cost => 600, :country => 'USA')
+    visit product_path(product)
+    click_link 'Delete Product'
+    expect(page).to have_content 'Product successfully deleted!'
+  end
 end
