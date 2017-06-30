@@ -1,4 +1,35 @@
-<h1>All producrs</h1>
+
+<h3>The product with the most reviews.</h3>
+
+<ul>
+  <% @products.most_reviews.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>The three most recently added products.</h3>
+
+<ul>
+  <% @products.three_most_recent_products.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>Made in USA</h3>
+
+<ul>
+  <% @products.made_in_usa.each do |product| %>
+    <li><%= link_to product.name, product%></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<h3>All producrs</h3>
 
 <ul>
   <% @products.each do |product| %>
