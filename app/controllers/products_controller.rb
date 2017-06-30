@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
   def show
   end
 
-  ## Add New Product
+  ## Add New Product ##
   def new
     @product = Product.new
   end
@@ -22,14 +22,14 @@ class ProductsController < ApplicationController
       render :new
     end
   end
-  ## Edit Product
 
+  ## Edit Product ##
   def edit
   end
 
   def update
     if @product.update(product_params)
-      redirect_to @product, notice: "#{@product.name}successfully added!"
+      redirect_to @product, notice: "#{@product.name}successfully updated!"
     else
       render :edit
     end
