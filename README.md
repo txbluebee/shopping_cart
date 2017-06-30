@@ -36,6 +36,7 @@ Commerce site is a website that allows administrator to add, edit, delete produc
 * install Postgres followed by the [instructions](https://www.learnhowtoprogram.com/ruby/ruby-database-basics/installing-postgres-7fb0cff7-a0f5-4b61-a0db-8a928b9f67ef).
 * `git clone https://github.com/txbluebee/commerce_site`
 * `cd commerce_site`
+* `bundle install`
 * Open new tab in the terminal (Alt +T) and run the following command
 * `postgres`
 * `rails db:create`
