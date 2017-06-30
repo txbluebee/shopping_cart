@@ -1,2 +1,7 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+<h1>Product Detail</h1>
+<p>Name: <%= @product.name %></p>
+<p>Cost: $<%= @product.cost %></p>
+<p>Country of Orign: <%= @product.country %></p>
+
+<%= link_to 'Edit Product Info', edit_product_path, :class => 'btn btn-primary'  %>
+<%= link_to 'Delete Product', product_path(@product), :method =>'delete', :data => {:confirm => 'You sure?'}, :class => 'btn btn-danger'%>
