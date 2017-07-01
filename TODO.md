@@ -30,3 +30,8 @@
 - [] Add Images throughout the site, including images for Products. You can use URLs (easiest) or use the Paperclip gem (which we'll be covering next week).
 - [] Jump ahead to next week and add user authentication to your site.
 - [] Choose a site online with a style you like, build a style for this site based on it, and include a link to that site within the README.md file.
+
+
+
+
+sending mail doesnt pass integration test yet
