@@ -6,7 +6,7 @@ describe "the add a list process" do
     click_link 'Add Product'
     fill_in 'Name', :with => 'Sport Shoe'
     fill_in 'Cost', :with => '8'
-    fill_in 'Country', :with => 'Taiwan'
+    select('United States', :from => 'Country')
     click_on 'Create Product'
     expect(page).to have_content 'All Products'
   end
