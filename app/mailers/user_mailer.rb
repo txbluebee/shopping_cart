@@ -4,4 +4,5 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to:@user.email, subject: "Thank you very much!"
   end
+
 end

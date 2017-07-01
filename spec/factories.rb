@@ -4,4 +4,10 @@ FactoryGirl.define do
     cost(6)
     country('US')
   end
+
+  factory(:user) do
+    email('brian@epicodus.com')
+    password('12345')
+  end  
+
 end
