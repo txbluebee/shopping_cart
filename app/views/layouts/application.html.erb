@@ -19,6 +19,11 @@
       <div class="jumbotron text-center">
         <h1><%= link_to "Lily's Shopping Heaven", root_path, :class => 'nav-link' %></h1>
       </div>
+      <% if current_user %>
+        <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
+      <% else %>
+        <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
+      <% end %>
       <%= flash[:notice] %>
       <%= yield %>
     </div>
