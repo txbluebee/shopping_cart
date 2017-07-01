@@ -13,5 +13,5 @@ class Product < ApplicationRecord
 
   scope :three_most_recent_products, -> { order(created_at: :desc).limit(3)}
 
-  scope :made_in_usa, -> { where(:country => "USA")}
+  scope :made_in_usa, -> { where(:country => "US")}
 end
