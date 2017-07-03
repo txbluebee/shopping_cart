@@ -19,7 +19,7 @@ Review.destroy_all
     Review.create!(
       author: Faker::HarryPotter.character,
       rating: Faker::Number.between(1, 5),
-      content: Faker::Lorem.sentence(10),
+      content: Faker::Lorem.sentence(20),
       product_id: product.id
     )
   end
