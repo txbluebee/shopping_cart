@@ -12,7 +12,7 @@ Review.destroy_all
 50.times do |index|
   product = Product.create!(
     name: Faker::Commerce.product_name,
-    cost: Faker::Commerce.price,
+    price: Faker::Commerce.price,
     country: Faker::Address.country
   )
   5.times do |index|

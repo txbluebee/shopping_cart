@@ -1,7 +1,12 @@
 class Product < ApplicationRecord
   has_many :reviews
-  validates_presence_of :name, :cost, :country
-  validates_numericality_of :cost, :greater_than => 0
+  has_many :order_items
+  has_many :orders, through: :order_items
+
+  validates_presence_of :name, :price, :country
+  validates_numericality_of :price, :greater_than => 0
+
+
 
   scope :most_reviews, -> {(
     select("products.id, products.name, count(reviews.id) as reviews_count")
